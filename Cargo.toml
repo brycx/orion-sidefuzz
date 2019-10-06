@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "secure_cmp",
+    "partial_eq",
+    "poly1305",
+]
