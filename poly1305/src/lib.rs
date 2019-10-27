@@ -29,5 +29,5 @@ pub extern "C" fn fuzz() {
     let input = sidefuzz::fetch_input(89);
     let sk = OneTimeKey::from_slice(&input[..32]).unwrap();
 
-    sidefuzz::black_box(poly1305(&sk, &input[32..]).unwrap());
+    sidefuzz::black_box(Poly1305::poly1305(&sk, &input[32..]).unwrap());
 }
