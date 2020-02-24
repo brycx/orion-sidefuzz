@@ -33,6 +33,6 @@ pub extern "C" fn fuzz() {
     sidefuzz::black_box(secret_key_pt_eq(&zero_sk, &gen_sk));
 }
 
-fn secret_key_pt_eq(zero_sk: &SecretKey, gen_sk: &SecretKey) -> bool {   
+fn secret_key_pt_eq(zero_sk: &SecretKey, gen_sk: &SecretKey) -> bool {
     zero_sk == gen_sk
 }

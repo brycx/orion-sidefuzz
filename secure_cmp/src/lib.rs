@@ -22,9 +22,8 @@
 
 extern crate orion;
 
-use orion::util::secure_cmp;
 use orion::hazardous::stream::chacha20::CHACHA_KEYSIZE;
-
+use orion::util::secure_cmp;
 
 #[no_mangle]
 pub extern "C" fn fuzz() {
