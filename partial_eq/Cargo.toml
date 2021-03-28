@@ -10,4 +10,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 sidefuzz = "0.1.2"
-orion = { git = "https://github.com/brycx/orion/", branch = "master" }
+orion = { git = "https://github.com/orion-rs/orion/", branch = "master" }
